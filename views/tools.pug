@@ -1,0 +1,44 @@
+mixin info(txt,link,txt_link)
+  .size-12
+    .info.snow_background 
+      span ✅ 
+      span=txt 
+      | 
+      a(href=link, target="_blank")=txt_link
+
+mixin download(link,txt_link)
+  .size-12
+    .bigButton.fit-content.padding-top
+      button.text-left
+        span 📦 
+        | 
+        span=txt_link
+mixin image(link)
+  .size-6.text-center
+    img(src=`public/images/${link}`, alt="")
+mixin quote(txt)
+
+  h2.indigo.text-center 
+    span "
+    span=txt
+    span "
+  br
+mixin double(uno,dos,bold)
+  if(bold)
+    .size-12.bold.no-padding.doubles
+      .size-6
+        p=uno
+      .size-6
+        p=dos  
+  else
+    .size-12.no-padding.doubles
+      .size-6
+        p=uno
+      .size-6
+        p=dos
+mixin doubleTitle(uno,dos) 
+    .size-12.no-padding.doubles
+      .size-6
+        h3=uno
+      .size-6
+        h3=dos 

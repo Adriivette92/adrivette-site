@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+}
+
+/* Links & Buttons */
+a {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ed64a6;
+  text-decoration: none;
+  margin-left:32px;
+  margin-right: 16px;
+}
+
+a:hover {
+  color: #000000;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ed64a6;
+}
+
+/* Fonts */
+h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+h3{
+  font-family: 'Muli', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+p {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  line-height: 2.1;
+}
+.pink{
+  color: #ed64a6;
+}
+.coral{
+  color: #F687B3;
+}
+
+/* Header */
+header {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sec {
+  margin: 16px;
+}
+
+.img-logo {
+  width: 80px;
+}
+
+/* Contenedor */
+
+
+/* Sección intro */
+.intro {
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    height: 60vw;
+  }
+}
+
+/* Sección Primera */
+.who{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10% 10%;
+}
+.left{
+  padding: 0 32px 0 0;
+}
+.card{
+  padding: 150px 25%;
+}
+.img-profile{
+  height: 40vw;
+}
+
+/* Sección Contact */
+.img-socialMedia{
+  height: 48px;
+  margin: 8px;
+}
+/* Responsive */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
