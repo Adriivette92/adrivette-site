@@ -42,8 +42,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'about' });
-});
+//router.get('/about', function(req, res, next) {
+  //res.render('about', { title: 'about' });
+//});
 
 module.exports = app;
