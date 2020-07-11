@@ -9,6 +9,11 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+// favicon
+var favicon = require('serve-favicon');
+var path = require('path');
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -37,6 +42,10 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'about' });
 });
 
 module.exports = app;

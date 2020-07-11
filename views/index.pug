@@ -1,17 +1,23 @@
 extends layout
 
 block content
+  section.intro
+    img(id='img-adrivette col-s-12', src='/images/Adrivette.svg', alt='Adrivette')
+    h3 Creando 
+      strong experiencias increíbles 
+      | centradas en las personas
+  
   section.who
-    div.col-s-6.left
+    div.left
         h3.coral Déjame presentarme
         br
         h1 Mi nombre es Adriana Romero
         br
         h3 Soy diseñadora de producto en Ciudad de México
-    div.col-s-6
+    div
         img.img-profile(src=`/images/profile.jpg`, alt="Profile")
     
-  section.card
+  section.about
     p Estudié Diseño de la Comunicación Gráfica y soy egresada de la Universidad Autónoma Metropolitana.
     p Hoy en día, mi mayor enfoque está en 
       strong productos digitales 
@@ -28,20 +34,20 @@ block content
 
     h2 Background
     p Incursione en el ambiente tech en 
-      strong Bambú Mobile
+      a.line(href='https://www.bambu-mobile.com/home') Bambú Mobile
       | , mi primer trabajo formal como UI/UX designer en donde tuve los cimientos de cómo 
       strong crear impacto 
       | a través de conocer hacia quiénes íbamos dirigidos, además de tener una cultura muy flexible que nos permitía seguir aprendiendo tanto de 
       strong herramientas visuales 
       | como metodologías de investigación. 
     p Después tuve una oportunidad en 
-      strong Accenture 
+      a.line(href='https://www.accenture.com/mx-es') Accenture 
       | en donde desarrollé algunas habilidades de 
       strong comunicación con desarrollo y negocio. 
       | A pesar de ser una gran consultora, me di cuenta que prefiero una cultura flexible en donde yo tenga mis tiempos y pueda organizarlos.
     p Actualmente estoy en 
-      strong albo, 
-      | una empresa mexicana que ayuda a tener una mejor vida financiera, me gusta diseñar productos que cambian el modelo mental de las personas sobre las finanzas y resolver problemas que día a día vemos. Además que tengo en mis manos incentivar la 
+      a.line(href='https://www.albo.mx') albo
+      | , una empresa mexicana que ayuda a tener una mejor vida financiera, me gusta diseñar productos que cambian el modelo mental de las personas sobre las finanzas y resolver problemas que día a día vemos. Además que tengo en mis manos incentivar la 
       strong innovación de productos, 
       | reinventar nuevos conceptos y crear sistemas que se conviertan en referente de la industria.
       
@@ -66,18 +72,15 @@ block content
       p Multi-disciplinaria
       p Autodidacta
 
-      br
-      br
-
-  section.card
+  section.contact
       p Envíame un correo a 
-        a(href=`mailto:ciira818@gmail.com`)
-            a() ciira818@gmail.com
-      div.socialMedia
-        a(href="https://www.behance.net/Adriivette92")
+        a.line(href='mailto:ciira818@gmail.com') ciira818@gmail.com
+      div
+        a.sm(href="https://www.behance.net/Adriivette92" target="_blank")
             img.img-socialMedia(src=`/images/behance.svg`, alt="Behance")
-        a(href="https://dribbble.com/adriivette92")
+        a.sm(href="https://dribbble.com/adriivette92" target="_blank")
             img.img-socialMedia(src=`/images/dribbble.svg`, alt="Dribbble")
-        a(href="https://www.linkedin.com/in/adriivette92/")
+        a.sm(href="https://www.linkedin.com/in/adriivette92/" target="_blank")
             img.img-socialMedia(src=`/images/linkedin.svg`, alt="Linkedin")
+  
             
