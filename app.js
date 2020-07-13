@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Importa lo que este en los archivos
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var aboutRouter = require('./routes/about');
 
 var app = express();
 
@@ -25,6 +27,7 @@ app.use('/public', express.static(__dirname + "/public"));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/about', aboutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -41,9 +44,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-//router.get('/about', function(req, res, next) {
-  //res.render('about', { title: 'about' });
-//});
 
 module.exports = app;
